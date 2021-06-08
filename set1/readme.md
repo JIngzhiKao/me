@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+I'm going to fill this in later, I promise! otherwise I'm going to buy everyone in the class shots.
