@@ -6,13 +6,8 @@ def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
 
     Look into modulo division using the '%' operator as one way of doing this.
-    """
-
-    if  a_number % 2 == 0:
-        print ( False )
-    elif a_number % 2 != 0:
-         print  ( True )
-    
+    """ 
+    number = a_number % 2 == 1
     return a_number
 
 
@@ -33,9 +28,9 @@ def fix_it(moves=True, should_move=True):
     """
     if moves == should_move:
         return "No Problem"
-    elif not moves and should_move:
-        return "Duct Tape"
     elif moves and not should_move:
+        return "Duct Tape"
+    elif not moves and should_move:
         return "WD-40"
     else:
         return "No Problem"
@@ -51,7 +46,11 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
+    star_list = [] 
+    for i in range(10):
+        star_list.append('*')
+
+    return star_list
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -61,7 +60,14 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    return None
+    number_of_items = []
+    for i in range(1,5) :
+        number_of_items.append("#")
+        
+    return number_of_items
+
+    
+
 
 
 def loops_2():
@@ -81,8 +87,15 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
-    """
-    return None
+"""
+    star_square = []
+    for J in range(10):
+        s_list = []
+        for i in range(10):
+            s_list.append('*')
+        star_square.append( s_list )
+
+    return star_square
 
 
 def loops_3():
@@ -106,7 +119,15 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    number_square = []
+    for i in range(10):
+       x = []
+       for H in range(10): 
+            x.append(str(i))
+     number_square.append(x)
+
+
+    return number_square
 
 
 def loops_4():
