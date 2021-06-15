@@ -124,9 +124,7 @@ def loops_3():
        x = []
        for H in range(10): 
             x.append(str(i))
-    number_square.append(x)
-
-
+       number_square.append(x)
     return number_square
 
 
@@ -147,7 +145,18 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    number_square = []
+    for i in range (10):
+        row = []
+        for w in range (10):
+            row.append (str(w))
+        number_square.append(row)
+    return number_square
+    
+
+
+
+    
 
 
 def loops_5():
@@ -174,7 +183,21 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    return None
+
+    number_square = []
+    for i in range (10):
+        y = []
+        for w in range (5):
+            y.append("(i" + str(i) + ', j' + str(w) + ')')
+        number_square.append(y)
+
+    return number_square
+            
+    
+
+
+
+    
 
 
 def loops_6():
@@ -197,8 +220,17 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    triangle_square = []
+    for i in range (10):
+        NOW = []
+        for w in range (i + 1):
+            NOW.append(str(w))
+        triangle_square.append(NOW)
 
+    return triangle_square 
+        
+        
+    return
 
 def loops_7():
     """Make a pyramid.
@@ -221,7 +253,25 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    triangle = []
+    for i in range (1,6):
+        angle = []
+        for w in range (0,5-i):
+            angle.append (' ')
+        triangle.append(angle)
+        for w in range ((5-i)+1,
+   
+   
+   
+   
+    return triangle
+
+
+
+
+            
+
+        
 
 
 def little_printer(some_kind_of_list, exercise_name):
