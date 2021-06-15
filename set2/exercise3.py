@@ -8,7 +8,7 @@ def is_odd(a_number):
     Look into modulo division using the '%' operator as one way of doing this.
     """ 
     number = a_number % 2 == 1
-    return a_number
+    return number
 
 
 def fix_it(moves=True, should_move=True):
@@ -60,11 +60,11 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    number_of_items = []
-    for i in range(1,5) :
-        number_of_items.append("#")
+    x = []
+    for i in range(number_of_items):
+        x.append(symbol)
         
-    return number_of_items
+    return x
 
     
 
@@ -124,7 +124,7 @@ def loops_3():
        x = []
        for H in range(10): 
             x.append(str(i))
-     number_square.append(x)
+    number_square.append(x)
 
 
     return number_square
