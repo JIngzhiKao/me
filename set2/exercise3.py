@@ -257,10 +257,13 @@ def loops_7():
     for i in range (1,6):
         angle = []
         for w in range (0,5-i):
-            angle.append (' ')
+            angle.append(' ')
+        for w in range((5-i)+1, (((5-i)+1) + 2*i) - 1):
+            angle.append('*')
+        for w in range((((5-i)+1) + 2*i)-1,10):
+             angle.append(' ')
         triangle.append(angle)
-        for w in range ((5-i)+1,
-   
+
    
    
    
