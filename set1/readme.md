@@ -1,1 +1,1 @@
-I'm going to fill this in later, I promise! otherwise I'm going to buy everyone in the class shots.
+//The challenges i have in week 1 is testing and change environment. However, Mr ben is helpful to help me solve problems.
