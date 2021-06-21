@@ -61,20 +61,12 @@ def stubborn_asker(low, high):
     Look up the docs for input
     """
     
-    i = 0 
-    while i > low and i < high:
-        i += 1
-        print ("correct"), i
-        if i < low:
-            print ('higher')
-        if i > high:
-            print ('lower')
-        else :
-            print ('again')
-        
-            break
+    low=int (input('first num'))
+    high =int(input('second num'))
+    for i in range (low+1 , high-1):
+        print (str(i), end='#')
+    print(str(high-1))
     return i 
-
         
 
 
