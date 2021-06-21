@@ -60,7 +60,29 @@ def stubborn_asker(low, high):
 
     Look up the docs for input
     """
-    return None
+    my_range = []
+    i = int(input ("input a number"))
+    if i > low and i < high:
+        print ('correct')
+        
+        my_range.append(i)
+    while not (low < i < high):
+        if i < low:
+            print ('try high')
+            break
+        if i > high:
+            print ('try low')
+            break
+        if i > low and i < high:
+            print ('correct')
+            break
+        
+        
+    i = int(input ("input a number"))  
+             
+
+
+    return my_range
 
 
 def not_number_rejector(message):
