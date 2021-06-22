@@ -61,13 +61,13 @@ def stubborn_asker(low, high):
     Look up the docs for input
     """
     
-    low=int (input('first num'))
-    high =int(input('second num'))
-    for i in range (low+1 , high-1):
-        print (str(i), end='#')
-    print(str(high-1))
-    return i 
-        
+    l =  high - low
+    for i in range (l):
+         the_number = low + i
+         if the_number ==  high :
+             break
+    return the_number
+         
 
 
 
@@ -78,9 +78,11 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
+       if message.isdigit():
+        return int(message)
+    else:print("number")
 
-
-    return None
+    
 
 
 def super_asker(low, high):
@@ -90,7 +92,7 @@ def super_asker(low, high):
     to make a function that does it all!
     Try to call at least one of the other functions to minimise the
     amount of code.
-    """
+    """ 
     return None
 
 
