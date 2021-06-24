@@ -72,15 +72,27 @@ def stubborn_asker(low, high):
 
 
 def not_number_rejector(message):
-    """Ask for a number repeatedly until actually given one.
+    """Ask for a number repeatedly until actually given one.                
 
     Ask for a number, and if the response is actually NOT a number 
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-       if message.isdigit():
-        return int(message)
-    else:print("number")
+    
+       
+    message = 'input a number'
+    while True:
+    
+        try:
+            input_number = int(raw_input(message))
+            print('{} is correct' . format(input_number) )
+            return input_number
+        except Exception as e:
+        
+            print('try again ({})' . format(e))
+    
+
+
 
     
 
@@ -109,6 +121,6 @@ if __name__ == "__main__":
     print("\nstubborn_asker")
     stubborn_asker(30, 45)
     print("\nnot_number_rejector")
-    not_number_rejector("Enter a number: ")
+    not_number_rejector(['Enter_a_number', 12])
     print("\nsuper_asker")
     super_asker(33, 42)
