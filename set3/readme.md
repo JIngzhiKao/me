@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+the exercise from thisi week is quiet hard, because i am confused of logical thinking. 

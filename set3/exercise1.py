@@ -84,7 +84,7 @@ def not_number_rejector(message):
     while True:
     
         try:
-            input_number = int(raw_input(message))
+            input_number = int(input(message))
             print('{} is correct' . format(input_number) )
             return input_number
         except Exception as e:
@@ -105,7 +105,16 @@ def super_asker(low, high):
     Try to call at least one of the other functions to minimise the
     amount of code.
     """ 
-    return None
+    message = 'input a number'
+    while True:
+    
+        try:
+            input_number = int(input(message))
+            print('{} is correct' . format(input_number) )
+            return input_number
+        except Exception as e:
+        
+            print('try again ({})' . format(e))
 
 
 if __name__ == "__main__":
