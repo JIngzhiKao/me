@@ -26,9 +26,14 @@ def binary_search(low, high, actual_number):
     """
     tries = 0
     guess = 0
+    numberlist = []
+    guess = []
+    low_int = int(low)
+    high_int = int (high)
+    
 
     # Write your code in here
-    
+
 
     return {"guess": guess, "tries": tries}
 
