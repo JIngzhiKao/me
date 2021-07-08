@@ -27,7 +27,7 @@ def binary_search(low, high, actual_number):
     tries = 0
     guess = 0
     # Write your code in here
-    while low < high:
+    while low <= high:
         guess = (low + high) // 2 
         if guess < actual_number :
             low =  guess + 1
@@ -35,7 +35,8 @@ def binary_search(low, high, actual_number):
             high = guess - 1
         else:
             return {"guess": guess, "tries": tries}
-            tries += 1
+        tries += 1
+            
 
 
 if __name__ == "__main__":
