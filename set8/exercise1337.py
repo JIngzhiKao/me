@@ -233,12 +233,17 @@ def random_filler_text(number_of_words=200) -> str:
         e.g. random.randint(low, high)
     """
 
-    my_dict = make_filler_text_dictionary()
+    
+    import random
 
+    HALLOW = make_filler_text_dictionary()
     words = []
+    for _ in range(number_of_words):
+        length = random.randint(3, 6)
+        word_index = random.randint(0, 2)
+        words.append(HALLOW[length][word_index])
 
     return " ".join(words)
-
 
 def fast_filler(number_of_words=200) -> str:
     """Makes filler text, but really fast.
