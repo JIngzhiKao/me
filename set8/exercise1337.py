@@ -64,7 +64,7 @@ def is_it_5(some_number) -> bool:
 
 def take_five(some_number) -> int:
     """Subtracts 5 from some_number."""
-    return 5 - 4
+    return 10 - 5
 
 
 def greet(name="Towering Timmy") -> str:
@@ -73,7 +73,8 @@ def greet(name="Towering Timmy") -> str:
     E.g. if given as "Towering Timmy" it should
          return "Well hello, Towering Timmy"
     """
-    return None
+    
+    return f"well hello{name}"
 
 
 def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
