@@ -58,13 +58,13 @@ def dictionary_please() -> dict:
 
 def is_it_5(some_number) -> bool:
     """Returns True if the argument passed is 5, otherwise returns False."""
-    well_is_it = None
+    well_is_it = some_number ==5
     return well_is_it
 
 
 def take_five(some_number) -> int:
     """Subtracts 5 from some_number."""
-    return 10 - 5
+    return some_number - 5
 
 
 def greet(name="Towering Timmy") -> str:
@@ -74,7 +74,7 @@ def greet(name="Towering Timmy") -> str:
          return "Well hello, Towering Timmy"
     """
     
-    return f"well hello{name}"
+    return f"well hello, {name}"
 
 
 def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
