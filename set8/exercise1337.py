@@ -64,7 +64,7 @@ def is_it_5(some_number) -> bool:
 
 def take_five(some_number) -> int:
     """Subtracts 5 from some_number."""
-    return None
+    return 5 - 4
 
 
 def greet(name="Towering Timmy") -> str:
