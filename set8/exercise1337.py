@@ -74,7 +74,7 @@ def greet(name="Towering Timmy") -> str:
          return "Well hello, Towering Timmy"
     """
     
-    return f"well hello, {name}"
+    return f"Well hello, {name}"
 
 
 def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
@@ -82,7 +82,10 @@ def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 2
     """
-    count = None
+    count = 0
+    for i in input_list:
+        if i is 1:
+            count += 1
 
     return count
 
