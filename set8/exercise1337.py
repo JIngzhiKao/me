@@ -30,28 +30,30 @@ def list_please() -> list:
     """Returns a list, you can put anything in the list."""
     
     indices = [12, 2 , 26 , 7 , 0 , 12  ,12 , 4 , 17]
-    wordArray = map(getLetter, indices)
-    wordArray[0] = wordArray[0].upper()
-    wordArray[1] = wordArray[1].upper()
-    wordArray[3] = wordArray[3].upper()
-    secret_word="".join(wordArray)
-    print(secret_word)
-    return secret_word
+    
+    return indices
 
 
 def int_list_please() -> list:
     """Returns a list of integers, any integers are fine."""
-    return None
+    www = [1,2,3,4,65464]
+
+    return www
+
 
 
 def string_list_please() -> list:
     """Returns a list of strings, any string are fine."""
-    return None
+    star_list = [] 
+    for i in range(10):
+        star_list.append('*')
+
+    return star_list
 
 
 def dictionary_please() -> dict:
     """Returns a dictionary, anything you like."""
-    return None
+    return {"john": 1}
 
 
 def is_it_5(some_number) -> bool:
