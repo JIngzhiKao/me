@@ -148,7 +148,7 @@ def set_it_on_fire(input_string="very naughty boy") -> str:
     TIP: make sure that you have a 🔥 on both ends of the string.
     """
 
-    return None
+    return ["🔥v🔥e🔥r🔥y🔥 🔥n🔥a🔥u🔥g🔥h🔥t🔥y🔥 🔥b🔥o🔥y🔥"]
 
 
 def pet_filter(letter="a") -> List:
