@@ -149,7 +149,7 @@ def set_it_on_fire(input_string="very naughty boy") -> str:
     """
 
         
-    return "🔥"'🔥'.join(input_string)+"🔥"
+    return "🔥"+'🔥'.join(input_string)+"🔥"
 
 
 def pet_filter(letter="a") -> List:
