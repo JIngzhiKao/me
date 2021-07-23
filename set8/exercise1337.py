@@ -220,11 +220,7 @@ def make_filler_text_dictionary() -> Dict:
 
     url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength="
     wd = {}
-    for i in range(3,7):
-        wd{i} = []
-        for _ in range(4):
-            r = requests.get(url + str(i))
-            wd[i].append(r.text)
+    
     return wd
 
 
