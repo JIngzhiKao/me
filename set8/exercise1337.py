@@ -187,10 +187,18 @@ def best_letter_for_pets() -> str:
     """
     import string
 
+    
+    
     the_alphabet = string.ascii_lowercase
-    most_popular_letter = ""
+    longest = -1
+    popular_letter = ""
+    for letter in the_alphabet:
+        x = len(pet_filter(letter))
+        if x > longest:
+            longest = x
+            popular_letter = letter
 
-    return most_popular_letter
+    return popular_letter
 
 
 def make_filler_text_dictionary() -> Dict:
