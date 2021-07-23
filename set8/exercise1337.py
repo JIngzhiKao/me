@@ -170,11 +170,11 @@ def pet_filter(letter="a") -> List:
         "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"
     ]
     # fmt: on
-    filtered = []
+    fil = []
     for pet in pets:
         if letter in pet:
-            filtered.append(pet)
-    return filtered
+            fil.append(pet)
+    return fil
 
 
 def best_letter_for_pets() -> str:
