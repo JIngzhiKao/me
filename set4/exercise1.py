@@ -88,7 +88,7 @@ def wordy_pyramid():
         response = requests.get(f"https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={i}")
         print(response.text)
         x.append(response.text)
-    pass
+    return x
 
 
 def pokedex(low=1, high=5):
