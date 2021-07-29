@@ -86,6 +86,7 @@ def wordy_pyramid():
         x.append(response.text)
     for i in range(30, 3, -2):
         response = requests.get{f"https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={i}"}
+        print(response.text)
         x.append(response.text)
     pass
 
