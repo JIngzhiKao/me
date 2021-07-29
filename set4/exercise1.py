@@ -113,7 +113,7 @@ def pokedex(low=1, high=5):
     for i in range (low,high):
         url = template.format(id=i)
         r = requests.get(url)
-        if r.status_code is 200:
+        if r.status_code == 200:
             the_json = json.loads(r.text)
             pokemon_list.append(the_json)
 
