@@ -39,7 +39,7 @@ def get_some_details():
     postcode = int(data['result'][0]['location']['postcode'])
     id = int(data['result'][0]['id']['value'])
     print(data['result'][0]['name']['last'],data['result'][0]['login']['password'], postcode + id)
-    return {"lastName": ata['result'][0]['name']['last'], "password": data['result'][0]['login']['password'], "postcodePlusID": postcode + id}
+    return {"lastName": data['result'][0]['name']['last'], "password": data['result'][0]['login']['password'], "postcodePlusID": postcode + id}
 
 
 def wordy_pyramid():
