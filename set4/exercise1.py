@@ -111,7 +111,10 @@ def pokedex(low=1, high=5):
     tallest_pockmon = "nobody"
     for p in some_pokemon:
         height = p["height"]
-    return {"name": None, "weight": None, "height": None}
+        if height > height_of_tallest_pokemon:
+            height_of_tallest_pokemon = height
+            tallest_pockmon = P
+    return {"name": tallest_pockmon['name'], "weight": tallest_pockmon['weight'], "height": tallest_pockmon['height']}
 
 
 def diarist():
