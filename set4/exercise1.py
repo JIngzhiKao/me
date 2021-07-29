@@ -38,7 +38,8 @@ def get_some_details():
     data = json.loads(json_data)
     him = data["result"][0]
 
-    return {"lastName": him['name']['last'], 
+    return {
+            "lastName": him['name']['last'], 
             "password": him['login']['password'],
             "postcodePlusID": int(him['location']['postcode']) + int(him['id']['value'])
             }
@@ -106,6 +107,7 @@ def pokedex(low=1, high=5):
          variable and then future access will be easier.
     """
     template = "https://pokeapi.co/api/v2/pokemon/{id}"
+    
     tallest = 0
     pokemon_list = []
     for i in range (low,high):
