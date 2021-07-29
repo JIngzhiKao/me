@@ -108,7 +108,7 @@ def pokedex(low=1, high=5):
     template = "https://pokeapi.co/api/v2/pokemon/{id}"
     tallest = 0
     pokemon_list = []
-    for i in range (low. high):
+    for i in range (low,high):
         url = template.format(id=i)
         r = requests.get(url)
         if r.status_code is 200:
@@ -121,7 +121,7 @@ def pokedex(low=1, high=5):
             tallest = height_new
             name = a["name"]
             weight = a["weight"]
-            height = ["height"]
+            height = a["height"]
 
     
     return {"name": name, "weight": weight, "height": height}
