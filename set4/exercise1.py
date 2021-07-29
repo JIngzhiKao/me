@@ -38,11 +38,11 @@ def get_some_details():
     data = json.loads(json_data)
     him = data["result"][0]
 
-    return {
-            "lastName": him['name']['last'], 
-            "password": him['login']['password'],
-            "postcodePlusID": int(him['location']['postcode']) + int(him['id']['value'])
-            }
+    return{
+        "lastName": him['name']['last'], 
+        "password": him['login']['password'],
+        "postcodePlusID": int(him['location']['postcode']) + int(him['id']['value'])
+        }
 
 
 def wordy_pyramid():
