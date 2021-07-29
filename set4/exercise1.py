@@ -36,7 +36,10 @@ def get_some_details():
     json_data = open(LOCAL + "/lazyduck.json").read()
 
     data = json.loads(json_data)
-    return {"lastName": None, "password": None, "postcodePlusID": None}
+    postcode = int(data['result'][0]['location']['postcode'])
+    id = int(data['result'][0]['id']['value'])
+    print(data['result'][0]['name']['last'],data['result'][0]['login']['password'], postcode + id)
+    return {"lastName": ata['result'][0]['name']['last'], "password": data['result'][0]['login']['password'], "postcodePlusID": postcode + id}
 
 
 def wordy_pyramid():
@@ -114,7 +117,7 @@ def diarist():
     TIP: this might come in handy if you need to hack a 3d print file in the future.
     """
     pass
-
+    
 
 if __name__ == "__main__":
     functions = [
@@ -129,3 +132,4 @@ if __name__ == "__main__":
             print(e)
     if not os.path.isfile("lasers.pew"):
         print("diarist did not create lasers.pew")
+z
