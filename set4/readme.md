@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+For assessment in this week, i think it's not hard than last week homework. However, i still have some problems such as i can't pass my first question. i spend two hours on it and i found that my input method editor is chinese formate. Then, i forget run the code, so i spend lots of time on last question.
