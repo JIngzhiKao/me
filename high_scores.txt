@@ -1,1 +1,1 @@
-[{"name": "& E:/anaconda/python.exe c:/Users/John/1161/me/set4/IOexamples.py", "time_taken": 29.38254690170288, "percentage": 0.0}]
+[{"name": "& E:/anaconda/python.exe c:/Users/John/1161/me/set4/IOexamples.py", "time_taken": 29.38254690170288, "percentage": 0.0}, {"name": "& E:/anaconda/python.exe c:/Users/John/1161/me/set4/IOexamples.py", "time_taken": 31.66585636138916, "percentage": 0.1111111111111111}]
