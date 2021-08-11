@@ -1,1 +1,1 @@
-//The challenges i have in week 1 is testing and change environment. However, Mr ben is helpful to help me solve problems.
+//The challenges i have in week 1 is testing and change environment. 

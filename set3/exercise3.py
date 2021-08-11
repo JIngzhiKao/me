@@ -30,31 +30,45 @@ def advancedGuessingGame():
     # the tests are looking for the exact string "You got it!". Don't modify that!
     print('welcome to the guessing game')
     print(' a number between _ and _?')
-    print(f"now a number between {lowerbound} and {upperbound}?")
-    guessnumber = input("guessednumber: ")
-
-    upperbound = int(upperbound)
-    lowerbound = int(lowerbound)
-
-    acturalnumber = random.randint(lowerbound, upperbound)
-
-    guessed = False
-
-    while not guessed:
-        ValueError
-        print('choose a better number')
-        guessednumber = int(input('guess a number:'))
-        print (f"you guessed{guessednumber},")
-        if guessednumber == acturalnumber:
-            print ('you got it, it was {}'.format(acturalnumber))
-            guessed = True
-        elif guessednumber < acturalnumber:
-          print("too small,try again")
-    else:
-          print ("too big,try again")
     
-    return "you got it"
+    
+    while True:
+      try:
+        lowerbound = int(input("Enter a lower bound:"))
+        upperbound = int(input("Enter an upper bound:"))
+      except ValueError as e:
+        print("Hey mate, a pure digital number is better for me to understand ")
+
+        continue
+      if lowerbound > upperbound:
+        print("Hey mate, {low} is bigger than {high}".format(low = lowerbound,high = upperbound))
+      else:
+        print("OK then, a number between{low} and {high} ?".format(low=lowerbound,high=upperbound))
+
+      lowerbound = int(lowerbound)
+      upperbound = int(upperbound)
+      actural_number = random.randint(lowerbound, upperbound)
+      while True:
+        try:
+          guess = int(input("Let's try it: "))
+        except ValueError as e:
+          print("Hey mate, please give me a pure digital number:")
+          continue
+        if guess < int(lowerbound):
+          print (" Hey mat, too small:")
+        if guess > int(upperbound):
+          print("Hey mate, you got too wild:")
+        if guess > actural_number:
+          print("too big,try again: ")
+        elif guess < actural_number:
+          print("too small,try again:")
+        else:
+          break
+        return "you got it"
+
+    
+    
 
 
-  if __name__ == "__main__":
-    print(advancedGuessingGame())
+      if __name__ == "__main__":
+        print(advancedGuessingGame())
