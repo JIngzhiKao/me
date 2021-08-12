@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+this week is last week for asking questions. i still need to improve my code such as how to add color to graph. 
