@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+This week is free week. however, i will start thinking about my project. what is purpose of my project. what should i do for my project and how can i find dataset for project. what is most interesting thing for me.

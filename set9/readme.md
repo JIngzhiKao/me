@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+i still improve my code and start to thinkiung about what should i talk in presentation. i start write notes and practice.
